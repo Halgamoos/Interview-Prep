@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/rotate-array/
 
+# Takeaway: Some problems require a trick to solve. This is an example of that
+
 # O(n) time | O(1) space
 class Solution(object):
     def rotate(self, nums, k):
