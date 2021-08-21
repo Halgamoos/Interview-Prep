@@ -29,9 +29,15 @@ class Solution:
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashmap = {}
+        # x + y = target
+        # nested for loops
+        seen = {}
+        # loop nums 
         for i in range(len(nums)):
             complement = target - nums[i]
-            if complement in hashmap:
-                return [i, hashmap[complement]]
-            hashmap[nums[i]] = i
+            # check if nums[i] is in seen, use  y = target - x
+            if complement in seen:
+                return [seen[complement], i]
+            # if not --> add it to seen
+            else:
+                seen[nums[i]] = i 
