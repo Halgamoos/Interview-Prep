@@ -26,3 +26,24 @@ class Solution(object):
         
         return dummy.next
 
+# Approach #2: Use slow, fast, and dummy pointers
+# O(n) time | O(1) space
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        dummy = ListNode(0)
+        dummy.next = head
+        fast, slow = dummy, dummy
+        
+        for _ in range(n):
+            if fast != None:
+                fast = fast.next
+            else: 
+                return None
+        
+        while fast.next != None:
+            fast = fast.next
+            slow = slow.next
+            
+        slow.next = slow.next.next
+        return dummy.next
+
