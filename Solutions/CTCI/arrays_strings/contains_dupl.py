@@ -35,7 +35,7 @@ class Solution_3(object):
         return False
 
 # Python solution 
-# O(1) time | O(1) space
+# O(n) time | O(n) space
 class Solution_3(object):
     def containsDuplicate(self, nums):
         return len(nums) != len(set(nums))
