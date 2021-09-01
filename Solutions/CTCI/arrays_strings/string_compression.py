@@ -13,10 +13,12 @@ def stringCompression(s):
             compressedString.append(str(counter))
             cur = l 
             counter = 1
+    # finsh last two
     compressedString.append(cur)
     compressedString.append(str(counter))
-    compressedString = "".join(compressedString)
 
+    compressedString = "".join(compressedString)
+    
     if len(compressedString) < len(s):
         return compressedString
     else:
