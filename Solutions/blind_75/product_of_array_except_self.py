@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/product-of-array-except-self/
 
-# Shrinking Window (Two Pass)
+# Two Pass
 # O(n) time | O(1) time
 
 class Solution:
