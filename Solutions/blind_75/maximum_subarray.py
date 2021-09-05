@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/maximum-subarray/
 
+
+# contigous means "next to or together in sequence"
 # O(n) time | O(1) space
 class Solution:
     def maxSubArray(self, nums):
